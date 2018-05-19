@@ -1,0 +1,12 @@
+U:\DocNet\ProjectDocNet\AkaProject.RochaValentin\Modele\bin\Debug\Database.mdf
+U:\DocNet\ProjectDocNet\AkaProject.RochaValentin\Modele\bin\Debug\Database_log.ldf
+U:\DocNet\ProjectDocNet\AkaProject.RochaValentin\Modele\bin\Debug\Modele.dll.config
+U:\DocNet\ProjectDocNet\AkaProject.RochaValentin\Modele\bin\Debug\Modele.dll
+U:\DocNet\ProjectDocNet\AkaProject.RochaValentin\Modele\bin\Debug\Modele.pdb
+U:\DocNet\ProjectDocNet\AkaProject.RochaValentin\Modele\bin\Debug\EntityFramework.dll
+U:\DocNet\ProjectDocNet\AkaProject.RochaValentin\Modele\bin\Debug\EntityFramework.SqlServer.dll
+U:\DocNet\ProjectDocNet\AkaProject.RochaValentin\Modele\bin\Debug\EntityFramework.xml
+U:\DocNet\ProjectDocNet\AkaProject.RochaValentin\Modele\bin\Debug\EntityFramework.SqlServer.xml
+U:\DocNet\ProjectDocNet\AkaProject.RochaValentin\Modele\obj\Debug\DataBase.csprojResolveAssemblyReference.cache
+U:\DocNet\ProjectDocNet\AkaProject.RochaValentin\Modele\obj\Debug\Modele.dll
+U:\DocNet\ProjectDocNet\AkaProject.RochaValentin\Modele\obj\Debug\Modele.pdb
