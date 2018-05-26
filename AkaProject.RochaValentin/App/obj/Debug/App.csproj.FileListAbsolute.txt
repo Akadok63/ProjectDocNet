@@ -1,0 +1,5 @@
+U:\DocNet\ProjectDocNet\AkaProject.RochaValentin\App\obj\Debug\App.csprojResolveAssemblyReference.cache
+U:\DocNet\ProjectDocNet\AkaProject.RochaValentin\App\obj\Debug\MainWindow.g.cs
+U:\DocNet\ProjectDocNet\AkaProject.RochaValentin\App\obj\Debug\App.g.cs
+U:\DocNet\ProjectDocNet\AkaProject.RochaValentin\App\obj\Debug\App_MarkupCompile.cache
+U:\DocNet\ProjectDocNet\AkaProject.RochaValentin\App\obj\Debug\App_MarkupCompile.lref
