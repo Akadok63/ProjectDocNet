@@ -1,0 +1,10 @@
+U:\DocNet\ProjectDocNet\AkaProject.RochaValentin\Model\bin\Debug\Model.dll.config
+U:\DocNet\ProjectDocNet\AkaProject.RochaValentin\Model\bin\Debug\Model.dll
+U:\DocNet\ProjectDocNet\AkaProject.RochaValentin\Model\bin\Debug\Model.pdb
+U:\DocNet\ProjectDocNet\AkaProject.RochaValentin\Model\bin\Debug\EntityFramework.dll
+U:\DocNet\ProjectDocNet\AkaProject.RochaValentin\Model\bin\Debug\EntityFramework.SqlServer.dll
+U:\DocNet\ProjectDocNet\AkaProject.RochaValentin\Model\bin\Debug\EntityFramework.xml
+U:\DocNet\ProjectDocNet\AkaProject.RochaValentin\Model\bin\Debug\EntityFramework.SqlServer.xml
+U:\DocNet\ProjectDocNet\AkaProject.RochaValentin\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+U:\DocNet\ProjectDocNet\AkaProject.RochaValentin\Model\obj\Debug\Model.dll
+U:\DocNet\ProjectDocNet\AkaProject.RochaValentin\Model\obj\Debug\Model.pdb

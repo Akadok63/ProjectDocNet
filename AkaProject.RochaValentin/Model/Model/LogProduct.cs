@@ -2,33 +2,39 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Data.Entity.ModelConfiguration;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Model.Model
 {
-    [Table("T_LogProduct")]
-    class LogProduct
+    public class LogProduct
     {
-        [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.None)]
-        [Column("LogProductId")]
-        private int Id { get; set; }
+        public int Id { get; set; }
 
-        [Column("Message")]
-        [StringLength(100)]
-        private String Message { get; set; }
+        public String Message { get; set; }
 
-        [Column("Date")]
-        private DateTime Date { get; set; }
+        public DateTime Date { get; set; }
 
-        [ForeignKey("ProductId")]
-        private Product ProductId { get; set; }
+        public int ProductId { get; set; }
 
-        public LogProduct()
+        public Product Product { get; set; }
+        
+    }
+        public class LogProductFluent : EntityTypeConfiguration<LogProduct>
+    {
+        public LogProductFluent()
         {
+            ToTable("T_LogProduct");
+            HasKey(c => c.Id);
 
+            Property(c => c.Id).IsRequired().HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity);
+            Property(c => c.Message).IsRequired().HasMaxLength(50);
+            Property(c => c.Date).IsRequired();
+
+            Property(c => c.ProductId);
+            HasRequired(c => c.Product).WithMany().HasForeignKey(c => c.ProductId);
         }
     }
 }

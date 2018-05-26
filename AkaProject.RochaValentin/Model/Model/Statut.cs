@@ -2,28 +2,30 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Data.Entity.ModelConfiguration;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Model.Model
 {
-    [Table("T_Statut")]
-    class Statut
+    public class Statut
     {
-        [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.None)]
-        [Column("StatutId")]
-        private int Id { get; set; }
+        public int Id { get; set; }
 
-        [Column("Libelle")]
-        [StringLength(50)]
-        [Required]
-        private String Libelle { get; set; }
+        public String Libelle { get; set; }
+        
+    }
 
-        public Statut()
+    public class StatutFluent : EntityTypeConfiguration<Statut>
+    {
+        public StatutFluent()
         {
+            ToTable("T_Statu");
+            HasKey(c => c.Id);
 
+            Property(c => c.Id).IsRequired().HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity);
+            Property(c => c.Libelle).IsRequired().HasMaxLength(50);
         }
     }
 }

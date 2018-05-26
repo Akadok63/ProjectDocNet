@@ -1,1 +1,16 @@
 U:\DocNet\ProjectDocNet\AkaProject.RochaValentin\Console\bin\Debug\Console.exe.config
+U:\DocNet\ProjectDocNet\AkaProject.RochaValentin\Console\bin\Debug\Console.exe
+U:\DocNet\ProjectDocNet\AkaProject.RochaValentin\Console\bin\Debug\Console.pdb
+U:\DocNet\ProjectDocNet\AkaProject.RochaValentin\Console\obj\Debug\Console.exe
+U:\DocNet\ProjectDocNet\AkaProject.RochaValentin\Console\obj\Debug\Console.pdb
+U:\DocNet\ProjectDocNet\AkaProject.RochaValentin\Console\bin\Debug\Database.mdf
+U:\DocNet\ProjectDocNet\AkaProject.RochaValentin\Console\bin\Debug\Database_log.ldf
+U:\DocNet\ProjectDocNet\AkaProject.RochaValentin\Console\bin\Debug\EntityFramework.dll
+U:\DocNet\ProjectDocNet\AkaProject.RochaValentin\Console\bin\Debug\EntityFramework.SqlServer.dll
+U:\DocNet\ProjectDocNet\AkaProject.RochaValentin\Console\bin\Debug\Model.dll
+U:\DocNet\ProjectDocNet\AkaProject.RochaValentin\Console\bin\Debug\Modele.dll
+U:\DocNet\ProjectDocNet\AkaProject.RochaValentin\Console\bin\Debug\Modele.pdb
+U:\DocNet\ProjectDocNet\AkaProject.RochaValentin\Console\bin\Debug\Model.pdb
+U:\DocNet\ProjectDocNet\AkaProject.RochaValentin\Console\bin\Debug\EntityFramework.xml
+U:\DocNet\ProjectDocNet\AkaProject.RochaValentin\Console\bin\Debug\EntityFramework.SqlServer.xml
+U:\DocNet\ProjectDocNet\AkaProject.RochaValentin\Console\obj\Debug\Console.csprojResolveAssemblyReference.cache

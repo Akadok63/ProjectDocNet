@@ -2,32 +2,33 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Data.Entity.ModelConfiguration;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Model.Model
 {
-    [Table("T_Category")]
-    class Category
+    public class Category
     {
-        [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.None)]
-        [Column("CategoryID")]
-        private int CategoryId { get; set; }
+        public int Id { get; set; }
 
-        [StringLength(50)]
-        [Column("Libelle")]
-        private String Libelle { get; set; }
+        public String Libelle { get; set; }
 
-        [Column("Actif")]
-        [Required]
-        private int Actif { get; set; }
+        public int Actif { get; set; }
 
+    }
 
-        public Category()
+    public class CategoryFluent : EntityTypeConfiguration<Category>
+    {
+        public CategoryFluent()
         {
+            ToTable("T_Category");
+            HasKey(c => c.Id);
 
+            Property(c => c.Id).IsRequired().HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity);
+            Property(c => c.Libelle).IsRequired().HasMaxLength(50);
+            Property(c => c.Actif).IsRequired();
         }
     }
 }

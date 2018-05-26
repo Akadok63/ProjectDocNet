@@ -2,36 +2,46 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Data.Entity.ModelConfiguration;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Model.Model
 {
-    [Table("T_Command")]
-    class Command
+    public class Command
     {
-        [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.None)]
-        [Column("CommandId")]
-        private int Id { get; set; }
+        public int Id { get; set; }
 
-        [Column("DateCommande")]
-        private DateTime Date_Commande { get; set; }
+        public DateTime DateCommande { get; set; }
+        
+        public String Observation { get; set; }
 
-        [Column("Observation")]
-        [StringLength(200)]
-        private String Observation { get; set; }
+        public int StatutId { get; set; }
 
-        [ForeignKey("StatutId")]
-        private Statut StatutId { get; set; }
+        public Statut Statut { get; set; }
+        
+        public int ClientId { get; set; }
 
-        [ForeignKey("ClientId")]
-        private Client ClientId { get; set; }
+        public Client Client { get; set; }
 
-        public Command()
+    }
+
+    public class CommandFluent : EntityTypeConfiguration<Command>
+    {
+        public CommandFluent()
         {
+            ToTable("T_Command");
+            HasKey(c => c.Id);
 
+            Property(c => c.Id).IsRequired().HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity);
+            Property(c => c.Observation).IsRequired().HasMaxLength(50);
+            Property(c => c.DateCommande).IsRequired();
+
+            Property(c => c.StatutId);
+            HasRequired(c => c.Statut).WithMany().HasForeignKey(c => c.StatutId);
+            Property(c => c.ClientId);
+            HasRequired(c => c.Client).WithMany().HasForeignKey(c => c.ClientId);
         }
     }
 }
