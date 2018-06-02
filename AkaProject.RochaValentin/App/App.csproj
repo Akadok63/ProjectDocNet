@@ -55,8 +55,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="ViewModel\BaseVM.cs" />
+    <Compile Include="ViewModel\Common\BaseVM.cs" />
+    <Compile Include="ViewModel\Common\RelayCommand.cs" />
     <Compile Include="ViewModel\DetailsProductVM.cs" />
+    <Compile Include="ViewModel\HomeVM.cs" />
     <Compile Include="ViewModel\ListProductVM.cs" />
     <Compile Include="View\DetailsProduct.xaml.cs">
       <DependentUpon>DetailsProduct.xaml</DependentUpon>
@@ -119,7 +121,12 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\Model\Modele.csproj">
+      <Project>{4B8FECBA-B468-4AEA-B5C4-7C34A7B20373}</Project>
+      <Name>Modele</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
