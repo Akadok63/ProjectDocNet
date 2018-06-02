@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace App.ViewModel
 {
-    class DetailsProductVM
+    public class DetailsProductVM
     {
+
     }
 }

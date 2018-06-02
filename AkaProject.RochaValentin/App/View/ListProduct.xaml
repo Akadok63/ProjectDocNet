@@ -21,15 +21,15 @@
             <ColumnDefinition></ColumnDefinition>
         </Grid.ColumnDefinitions>
 
-        <ListView Grid.Column="0"  Grid.Row="0" Grid.RowSpan="3" Margin="5px" ItemsSource="{Binding Produits, UpdateSourceTrigger=PropertyChanged}" SelectedItem="{Binding SelectedProduit, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}">
+        <ListView Grid.Column="0"  Grid.Row="0" Grid.RowSpan="3" Margin="5px" >
             <ListView.View>
                 <GridView>
-                    <GridViewColumn Width="100px" Header="Code" DisplayMemberBinding="{Binding Code}" />
-                    <GridViewColumn Width="150px" Header="Nom" DisplayMemberBinding="{Binding Nom}" />
+                    <GridViewColumn Width="100px" Header="Code"  />
+                    <GridViewColumn Width="150px" Header="Nom" />
                 </GridView>
             </ListView.View>
         </ListView>
 
-        <my:DetailsProduct DataContext="{Binding SelectedProduit, UpdateSourceTrigger=PropertyChanged}"></my:DetailsProduct>
+        <my:DetailsProduct DataContext=""></my:DetailsProduct>
     </Grid>
 </Page>

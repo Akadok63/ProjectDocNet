@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace App.ViewModel
 {
-    class ListProductVM
+    public class ListProductVM
     {
     }
 }

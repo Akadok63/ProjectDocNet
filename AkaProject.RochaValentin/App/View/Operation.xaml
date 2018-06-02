@@ -6,5 +6,5 @@
         xmlns:local="clr-namespace:App.View"
         mc:Ignorable="d"
         Title="Operation" Height="300" Width="300">
-    <Label HorizontalAlignment="Stretch" VerticalAlignment="Stretch">TEST</Label>
+    <Label  HorizontalAlignment="Stretch" VerticalAlignment="Stretch">TEST</Label>
 </Window>

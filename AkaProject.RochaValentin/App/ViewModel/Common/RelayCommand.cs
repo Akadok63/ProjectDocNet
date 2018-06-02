@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace App.ViewModel
+namespace App.ViewModel.Common
 {
-    class BaseVM
+    class RelayCommand
     {
     }
 }
