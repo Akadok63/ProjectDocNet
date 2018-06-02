@@ -3,10 +3,22 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:my="clr-namespace:App.View"
         xmlns:local="clr-namespace:App"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        
+        <!-- Définition du gridLayout -->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50px"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <DockPanel Background="LightBlue">
+            <Label VerticalAlignment="Center" HorizontalAlignment="Center">TEST</Label>
+        </DockPanel>
+        <my:ListProduct Grid.Row="1" DataContext="{Binding ListProductVM}"></my:ListProduct>
     </Grid>
 </Window>
