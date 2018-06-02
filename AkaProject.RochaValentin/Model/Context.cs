@@ -9,17 +9,29 @@ using System.Threading.Tasks;
 
 namespace Model
 {
-    public partial class Context : DbContext
+    public class Context : DbContext
     {
         public Context() : base("name=DataBase")
         {
+            Database.SetInitializer<Context>(new DropCreateDatabaseIfModelChanges<Context>());
         }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
+
             modelBuilder.HasDefaultSchema("dbo");
-            modelBuilder.Configurations.AddFromAssembly(Assembly.GetExecutingAssembly());
+            modelBuilder.Configurations
+
+                .Add(new ClientFluent())
+                .Add(new CommandFluent())
+                .Add(new CommandProducttFluent())
+                .Add(new CategoryFluent())
+                .Add(new StatutFluent())
+                .Add(new LogProductFluent())
+                .Add(new ProductFluent())
+                ;
+
         }
 
         public DbSet<Category> Categories { get; set; }
